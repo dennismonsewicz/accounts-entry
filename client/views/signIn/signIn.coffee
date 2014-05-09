@@ -20,6 +20,9 @@ AccountsEntry.entrySignInHelpers = {
 
   logo: ->
     AccountsEntry.settings.logo
+    
+  allowPublicSignup: ->
+    false
 
   isUsernameOnly: ->
     return AccountsEntry.settings.passwordSignupFields == t9n("username")
