@@ -39,7 +39,9 @@
             {{/unless}}
           </form>
         {{/if}}
-        <p class="entry-signup-cta">{{t9n "dontHaveAnAccount"}} <a href="/sign-up">{{t9n "signUp"}}</a></p>
+        {{#if allowPublicSignup}}
+          <p class="entry-signup-cta">{{t9n "dontHaveAnAccount"}} <a href="/sign-up">{{t9n "signUp"}}</a></p>
+        {{/if}}
       </div>
     </div>
   </div>
